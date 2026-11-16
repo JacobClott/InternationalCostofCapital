@@ -10,12 +10,12 @@ Industry: Software (System & Application) · Country: United States · Tax: U.S.
 | Input | Source |
 |---|---|
 | Industry unlevered betas | [Damodaran betas.xls](https://pages.stern.nyu.edu/~adamodar/pc/datasets/betas.xls) |
-| USD BBB spread | Searched for in betas.xls; if absent, Damodaran's [ratings page](https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html) (Baa2/BBB row) |
+| USD BBB spread | Damodaran's [ratings page](https://pages.stern.nyu.edu/adamodar/New_Home_Page/datafile/ratings.html), Baa2/BBB row for large non-financial service firms |
 | Corporate tax rates | [OECD Corporate Tax Statistics 2024](https://www.oecd.org/en/publications/corporate-tax-statistics-2024_9c27d6e8-en/full-report/statutory-corporate-income-tax-rates_440f9286.html) |
 | 10Y government yields | [Trading Economics](https://tradingeconomics.com/bonds) (bonds table, then per-country page) |
 
 **Fallbacks.** If a live fetch fails, the app uses an embedded **illustrative placeholder** (tax rates and
-yields for ~45 countries, a 1.11% BBB spread) and shows a warning in the *Data status* panel. These
+yields for ~45 countries, a 1.11% BBB spread (Damodaran, Jan 2026)) and shows a warning in the *Data status* panel. These
 placeholders are not current market data. For betas, you can upload betas.xls manually or use the beta override.
 Trading Economics and OECD pages are partly JavaScript-rendered, so live parsing may fail; use the overrides.
 
